@@ -1,0 +1,50 @@
+﻿1. 내장 개체
+ASP.NET은 여러가지 내장 개체를 지원해 웹 페이지를 구현할 때 사용할 수 있다.
+Resposne 개체, Request 개체, Server 개체, Application 개체, Session 개체가 있다.
+
+
+2. Response 객체
+	클라이언트의 요청에 대하여 서버가 응답을 하기 위한 객체이다.
+
+	1) Response.Write() : 페이지에 문자열을 출력한다.
+		문자열을 출력하거나 Buffer를 사용할 경우 Buffer에 출력 내용을 담는다.
+	2) Response.Redirect() : 지정된 페이지로 이동한다.
+		ASP.NET 페이제에서 특정 URL 페이지로 이동할 때 사용한다.
+		
+	3) Response.Expries : 현재 페이지의 소멸 시간을 설정한다.
+		웹 브라우저의 캐시 내용을 매번 읽을 수 있다.
+
+	4) Response.Buffer : 버퍼링 사용 여부를 결정한다.
+		Response.Buffer = true; 로 버퍼링 사용이 가능하다
+		* 버퍼링 : 하나의 페이지에서 여러개로 끊어서 보여주는 기능 제공
+
+	5) Response.Flush() : 현재 버퍼의 내용을 출력한다.
+		버퍼에 있는 내용 출력 > 비우기
+
+	6) Response.Clear() : 현재 버퍼의 내용을 지운다.
+		버퍼에 있는 내용 초기화
+
+	7) Response.End() : 이후의 코드 실행을 중단하고 현재 페이지를 종료한다.
+		버퍼에 있는 내용 출력 > 종료
+
+	8) Response.WriterFile() : 스트림(파일)을 출력한다.
+	9) Response.Cookies() : 쿠키를 지정한다.
+
+	* 쿠키 : 웹 서버가 웹브라우저에 보내서 클라이언트에 저장해뒀다가 서버의 요청이 있을때 다시 보내주는 문자열 데이터이다.
+			사용자의 특정 정보를 저장해놓았다가 같은 웹 사이트에 접속하면, 해당 정보로 이전 상태를 유지할 수 있다.
+	* 세션 : 쿠키와는 반대로 서버측에 특정 정보를 저장하여 세션을 유지할 수 있다.
+
+
+3. Request 객체
+	Request 개체는 사용자에게 어떤 값을 입력 받고자 할대 사용한다. 사용자가 Form에 작성한 내용들을 POST와 GET 방식으로 전송된 값을 받거나,
+	현재 접속자의 IP 주소 등 클라이언트 정볼르 얻을 수 있따.
+	1) Request.QueryString[] : GET 방식으로 넘어온 QueryString 값인 key와 value를 받고자할 때 사용한다.
+	2) Request.Form[] : Post 방식으로 넘어온 Key와 Value 값을 받고자할 때 사용한다.
+	3) Request.Params[] : 사용자에게 전송된 GET/POST 방식을 모두 받고자할 때 사용한다.
+	4) Request.UserHostAddress : 현재 접속자의 IP 주소를 문자열로 반환한다.
+	5) Request.ServerVariables[] : 현재 접속자의 주요 서버 환경 변수값을 알려준다.
+	6) Request.Cookies[] : 저장된 쿠키 값을 읽어 온다.
+	7) Request.Url : 현재 웹 페이지의 URL을 반환한다.
+	8) Request.PhysicalApplicationPath : 현재 웹 사이트의 가상 디렉터리의 물리적인 경로를 알려준다.
+
+4. Server 객체

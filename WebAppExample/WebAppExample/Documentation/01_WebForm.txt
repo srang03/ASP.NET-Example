@@ -1,0 +1,34 @@
+﻿1. Web Form
+	ASP.NET 웹 페이지의 확장자는 .aspx 이며, aspx 페이지 하나를 가르켜 ASP.NET 웹 폼이라고 한다.
+	ASP.NET 페이지에서는 <body> 안에 <form> 태그를 두고 모든 소스코드를 작성한다.
+
+	1) System.Web.Ui.Page 클래스
+	ASP.NET의 각 웹페이지는 Page 클래스에 있는 모든 기능을 상속받아서 사용한다. Page 클래스에는 웹 페이지를 구현하기 위한 도구들을 가지고 있다.
+
+	public partial class Default : System.Web.UI.Page
+
+	2)Page_Load 이벤트 
+	Page 클래스에서 가장 중요한 이벤트로 페이지가 로딩 될때 이벤트가 실행된다.
+
+	3) ASP.NET 서버 컨트롤
+	ASP 서버 컨트롤은 HTML의 태그처럼 웹 페이지에서 출력되는 요소의 단위이다.
+	서버 컨트롤러의 종류는 HTML 서버 컨트롤, WEB 서버 컨트롤(표준 컨트롤), 유효성 검사 컨트롤, 사용자 정의 컨트롤(User Control)등으로 구분된다.
+
+	4) runat="server"
+	ASP.NET은 모든 HTML 구성요소에 runat="server" 속성을 추가하여 서버 컨트롤로 변경할 수 있다. 서버 컨트롤로 변경될 경우 aspx.cs 파일에서 C# 코드로
+	컨트롤 개체에 접근하여 데이터를 주고받거나, 이벤트 처리기를 통해 서버 측 기능을 구현할 수 있다.
+
+	5) ASP.NET 관련 확장자
+	- aspx : ASP.NET의 기본 확장자로 Web Form을 의미한다.
+	- ascx : 단독으로 실행되지 않고 aspx에 포함되어 실행되는 사용자 정의 컨트롤이다.
+	- master : 공통 레이아웃을 담고 있는 마스터 페이지이다.
+
+2. 이벤트 처리기
+	1) Page_Load 이벤트 처리기
+	Page_Load 메서드는 ASP.NET 웹 사이트에서 각각의 웹 페이지가 실행되는 시점을 나타낸다. 
+	페이지가 로드될 때 발생되는 이벤트를 잡아내는 이벤트 핸들러이다.
+	
+	2) Button_Click 이벤트
+	버튼이 클릭되는 순간에 실행되는 코드이다. 
+	버튼의 클릭 이벤트를 잡아내는 이벤트 처리기를 사용한다.
+	protected void btnInput_Click (object sender, EventArgs e)
