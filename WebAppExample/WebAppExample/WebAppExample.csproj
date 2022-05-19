@@ -67,11 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="02_ASP.NET Object\AppSession.aspx" />
+    <Content Include="02_ASP.NET Object\DevASPNET.css" />
+    <Content Include="02_ASP.NET Object\Page.aspx" />
     <Content Include="02_ASP.NET Object\Request.aspx" />
     <Content Include="02_ASP.NET Object\Response.aspx" />
     <Content Include="02_ASP.NET Object\Response_Buffer.aspx" />
+    <Content Include="02_ASP.NET Object\Server.aspx" />
     <Content Include="Documentation\01_WebForm.txt" />
     <Content Include="01_WebForm\FrmHelloWorld.aspx" />
+    <Content Include="Documentation\03_AppSession.txt" />
+    <Content Include="Documentation\Page.txt" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -82,6 +88,20 @@
     </Compile>
     <Compile Include="01_WebForm\FrmHelloWorld.aspx.designer.cs">
       <DependentUpon>FrmHelloWorld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="02_ASP.NET Object\AppSession.aspx.cs">
+      <DependentUpon>AppSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="02_ASP.NET Object\AppSession.aspx.designer.cs">
+      <DependentUpon>AppSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="02_ASP.NET Object\Page.aspx.cs">
+      <DependentUpon>Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="02_ASP.NET Object\Page.aspx.designer.cs">
+      <DependentUpon>Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="02_ASP.NET Object\Request.aspx.cs">
       <DependentUpon>Request.aspx</DependentUpon>
@@ -103,6 +123,13 @@
     </Compile>
     <Compile Include="02_ASP.NET Object\Response_Buffer.aspx.designer.cs">
       <DependentUpon>Response_Buffer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="02_ASP.NET Object\Server.aspx.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="02_ASP.NET Object\Server.aspx.designer.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

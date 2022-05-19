@@ -1,0 +1,40 @@
+﻿[1] Page 클래스
+	ASP.NET 페이지는 모드 System.Web.UI.Page 클래스르 상속한다.
+	Page 클래스는 ASP.NET에서 가장 중요할 만한 기능들을 가지고 있다.
+
+	IsPostBack : 현재 페이지를 처음 로드했는지 다시 포스트백했는지 확인한다.
+	ClientScript.RegisterClientScriptBlock() : 자바스크립트를 동적으로 웹 페이지에 추가한다.
+	Header : 현재 웹 폼 <head> 태그 부분을 정의한다.
+	Title : 현재 웹 폼의 제목을 동적으로 설정하거나 가져온다.
+	SetFocus() : 다른 컨트롤의 ID 값을 지정해주면 웹 폼이 로드할 때 해당 컨트롤에 자동 포커스가 된다.
+
+[2] IsPostBack
+	웹 페이지를 웹 브라우저로 요청할 때 처음 실행되는 것을 처음 로드라고 하고, 
+	웹 폼에서 서버 컨트롤을 클릭했을 때 현재 페이지가 다시 실행되는 것을 포스트백 이라고 한다.
+
+	서버 컨트롤을 클릭하면 클릭 이벤트만 발생하는 것이 아니라 Page_Load 이벤트 처리기를 먼저 실행하고
+	서버 컨트롤 이벤트가 그 이후에 실행된다.
+
+	포스트백 관련 유의 사항
+	1) 페이지를 처음 로드할 때만 어떤 처리를 해야한다면 
+		반드시 Page_Load 이벤트 핸들러에서 (!IsPostBack){ ... } 코드 블럭 안에 정의해야한다.
+	2) 버튼을 클릭했을 때 Page_Loade 이벤트 핸들러가 실행되지 않고 해당 이벤트만 구현하려면 
+		버튼 속성에 CausesValidation 속성을 false로 설정해야한다.
+
+[3] Page 지시문
+	ASP.NET의 웹 폼은 Page 지시문으로 시작한다. 
+	페이지 지시문에서 선언적으로 여러 가지 속성을 추가해서 웹폼의 동작을 제어할 수 있다.
+	
+		<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AppSession.aspx.cs" 
+		Inherits="WebAppExample._02_ASP.NET_Object.AppSession" %>
+
+			Language="C#" // ASP.NET의 기본 언어를 C#으로 설정한다.
+			AutoEventWireup="true" // ASPX 파일에서 발생한 이벤트를 ASPX.CS 파일의 이벤트 핸들러에 자동으로 연결한다.
+			CodeBehind="AppSession.aspx.cs" // 현재 웹 폼 페이지의 코드를 담당하는 aspx.cs 파일을 지정한다.
+			Inherits="WebAppExample._02_ASP.NET_Object.AppSession" // 네임스페이스와 함께 파일의 클래스 이름을 지정한다.
+
+			Trace = "true" // 웹 폼을 추적하는 코드를 페이지 아래에 출력한다.
+			Debug = "true" // 웹 폼 실행시 발생되는 에러 메시지를 자세하게 출력한다.
+			ValidateRequest = "false" // 웹 폼에서 입력된 HTML 태그를 서버 측으로 전송한다. (기본 값은 true)
+			MaintainScrollPositionOnPostback = "true" // 상하 스크롤바가 생기는 페이지에서 새로 고침을 하거나 버튼이 클릭될 때 바로 전의 스크롤바 위치로 스크롤을 고정한다.
+
