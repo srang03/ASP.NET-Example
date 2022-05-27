@@ -79,9 +79,17 @@
     <Content Include="03_Control\StandardControl.aspx" />
     <Content Include="04_Standard_Control\CheckBox.aspx" />
     <Content Include="04_Standard_Control\DynamicDropDownList.aspx" />
+    <Content Include="04_Standard_Control\HiddenField.aspx" />
     <Content Include="04_Standard_Control\ListBoxControl.aspx" />
+    <Content Include="04_Standard_Control\LiteralControl.aspx" />
+    <Content Include="04_Standard_Control\RadioButton.aspx" />
     <Content Include="04_Standard_Control\StandardControl.txt" />
     <Content Include="04_Standard_Control\Standard_Control.aspx" />
+    <Content Include="05_RichControl\AdRotator.aspx" />
+    <Content Include="05_RichControl\CalendarControl.aspx" />
+    <Content Include="05_RichControl\FileControl.aspx" />
+    <Content Include="05_RichControl\FrmAdRotatora.xml" />
+    <Content Include="05_RichControl\RichControl.txt" />
     <Content Include="Documentation\01_WebForm.txt" />
     <Content Include="01_WebForm\FrmHelloWorld.aspx" />
     <Content Include="Documentation\03_AppSession.txt" />
@@ -167,6 +175,13 @@
     <Compile Include="04_Standard_Control\DynamicDropDownList.aspx.designer.cs">
       <DependentUpon>DynamicDropDownList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="04_Standard_Control\HiddenField.aspx.cs">
+      <DependentUpon>HiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\HiddenField.aspx.designer.cs">
+      <DependentUpon>HiddenField.aspx</DependentUpon>
+    </Compile>
     <Compile Include="04_Standard_Control\ListBoxControl.aspx.cs">
       <DependentUpon>ListBoxControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -174,12 +189,47 @@
     <Compile Include="04_Standard_Control\ListBoxControl.aspx.designer.cs">
       <DependentUpon>ListBoxControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="04_Standard_Control\LiteralControl.aspx.cs">
+      <DependentUpon>LiteralControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\LiteralControl.aspx.designer.cs">
+      <DependentUpon>LiteralControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Standard_Control\RadioButton.aspx.cs">
+      <DependentUpon>RadioButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\RadioButton.aspx.designer.cs">
+      <DependentUpon>RadioButton.aspx</DependentUpon>
+    </Compile>
     <Compile Include="04_Standard_Control\Standard_Control.aspx.cs">
       <DependentUpon>Standard_Control.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="04_Standard_Control\Standard_Control.aspx.designer.cs">
       <DependentUpon>Standard_Control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\AdRotator.aspx.cs">
+      <DependentUpon>AdRotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\AdRotator.aspx.designer.cs">
+      <DependentUpon>AdRotator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\CalendarControl.aspx.cs">
+      <DependentUpon>CalendarControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\CalendarControl.aspx.designer.cs">
+      <DependentUpon>CalendarControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\FileControl.aspx.cs">
+      <DependentUpon>FileControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\FileControl.aspx.designer.cs">
+      <DependentUpon>FileControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -199,6 +249,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

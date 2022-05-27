@@ -17,7 +17,7 @@ namespace WebAppExample._04_Standard_Control
             TableCell td = new TableCell();
 
             LiteralControl literalControl = new LiteralControl();
-            literalControl.Text = "안녕";
+            
 
             td.Controls.Add(literalControl);
             tr.Controls.Add(td);
