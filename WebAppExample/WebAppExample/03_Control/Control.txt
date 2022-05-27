@@ -1,0 +1,36 @@
+﻿[1] 표준 컨트롤
+	1) 순수 HTML 사용
+	2) HTML 서버 컨트롤 사용
+	3) WEB 서버 컨트롤 사용
+
+[2] Label 컨트롤
+	레이블 컨트롤은 <span> 태그로 웹 폼에 편집이 불가능한 문자열을 출력하는 컨트롤이다.
+	<asp:label id="..." runat="server"/>
+
+[3] TextBox 컨트롤
+	텍스트박스 컨트롤은 사용자에게 어떤 값을 입력 받을 때 사용한다.
+	TextBox의 종류는 3가지로 속성 값에 TextMode="..."를 넣어 원하는 모드로 사용할 수 있다.
+	- SingleLine
+	- Password
+	- MultiLine
+[4] Button 컨트롤
+	버튼 컨트롤은 사용자가 어떤 명령을 서버측에 전달할 때 사용한다.
+
+[5] LinkButton 컨트롤
+	하이퍼링크와 같은 모양이지만, Click 이벤트를 사용하여.cs 파일에서 특정 기능을 구현할 수 있다.
+	HTML <a>태그로 렌더링된다.
+
+[6] ImageButton 컨트롤
+	이미지버튼 컨트롤은 링크 버튼과 마찬가지로 사용자가 어떤 명령을 서버측에 전달할 때 사용된다.
+	HTML <input type="image">로 출력된다.
+
+
+	매개변수로 받는 XXXEventArgs 클래스형 매개 변수는 현재 시점에서 필요한 추가 정보를 제공한다.
+	protected void btn_click (object sender, EventArgs e)
+	{
+		Response.Write($"{e.X}, {e.Y}");
+	}
+
+	정리 : 버튼, 링크 버튼, 이미지 버튼 컨트롤은 모두 버튼을 클릭할 때 명령어를 실행한다.
+
+

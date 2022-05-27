@@ -74,6 +74,14 @@
     <Content Include="02_ASP.NET Object\Response.aspx" />
     <Content Include="02_ASP.NET Object\Response_Buffer.aspx" />
     <Content Include="02_ASP.NET Object\Server.aspx" />
+    <Content Include="03_Control\Control.txt" />
+    <Content Include="03_Control\OtherButton.aspx" />
+    <Content Include="03_Control\StandardControl.aspx" />
+    <Content Include="04_Standard_Control\CheckBox.aspx" />
+    <Content Include="04_Standard_Control\DynamicDropDownList.aspx" />
+    <Content Include="04_Standard_Control\ListBoxControl.aspx" />
+    <Content Include="04_Standard_Control\StandardControl.txt" />
+    <Content Include="04_Standard_Control\Standard_Control.aspx" />
     <Content Include="Documentation\01_WebForm.txt" />
     <Content Include="01_WebForm\FrmHelloWorld.aspx" />
     <Content Include="Documentation\03_AppSession.txt" />
@@ -130,6 +138,48 @@
     </Compile>
     <Compile Include="02_ASP.NET Object\Server.aspx.designer.cs">
       <DependentUpon>Server.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Control\OtherButton.aspx.cs">
+      <DependentUpon>OtherButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Control\OtherButton.aspx.designer.cs">
+      <DependentUpon>OtherButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Control\StandardControl.aspx.cs">
+      <DependentUpon>StandardControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Control\StandardControl.aspx.designer.cs">
+      <DependentUpon>StandardControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Standard_Control\CheckBox.aspx.cs">
+      <DependentUpon>CheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\CheckBox.aspx.designer.cs">
+      <DependentUpon>CheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Standard_Control\DynamicDropDownList.aspx.cs">
+      <DependentUpon>DynamicDropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\DynamicDropDownList.aspx.designer.cs">
+      <DependentUpon>DynamicDropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Standard_Control\ListBoxControl.aspx.cs">
+      <DependentUpon>ListBoxControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\ListBoxControl.aspx.designer.cs">
+      <DependentUpon>ListBoxControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Standard_Control\Standard_Control.aspx.cs">
+      <DependentUpon>Standard_Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Standard_Control\Standard_Control.aspx.designer.cs">
+      <DependentUpon>Standard_Control.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
