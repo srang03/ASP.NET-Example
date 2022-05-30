@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.6.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -89,12 +92,36 @@
     <Content Include="05_RichControl\CalendarControl.aspx" />
     <Content Include="05_RichControl\FileControl.aspx" />
     <Content Include="05_RichControl\FrmAdRotatora.xml" />
+    <Content Include="05_RichControl\FrmXml.aspx" />
+    <Content Include="05_RichControl\frmXml.xml" />
+    <Content Include="05_RichControl\FrmXml.xsl" />
+    <Content Include="05_RichControl\MultiView.aspx" />
+    <Content Include="05_RichControl\PanelControl.aspx" />
+    <Content Include="05_RichControl\PlaceHolder.aspx" />
     <Content Include="05_RichControl\RichControl.txt" />
+    <Content Include="05_RichControl\Substitution.aspx" />
+    <Content Include="05_RichControl\WizardControl.aspx" />
+    <Content Include="06_ValidationControl\CheckBoxRequiredValidation.aspx" />
+    <Content Include="06_ValidationControl\CompareValidator.aspx" />
+    <Content Include="06_ValidationControl\CustomerValidation.aspx" />
+    <Content Include="06_ValidationControl\DropDownListRequiredFieldValidator.aspx" />
+    <Content Include="06_ValidationControl\RangeValidation.aspx" />
+    <Content Include="06_ValidationControl\RangeVAlidatorinJS.aspx" />
+    <Content Include="06_ValidationControl\RegularExpressionValidator.aspx" />
+    <Content Include="06_ValidationControl\RequireControl.aspx" />
+    <Content Include="06_ValidationControl\ValidationControl.txt" />
+    <Content Include="06_ValidationControl\ValidationSummary.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Documentation\01_WebForm.txt" />
     <Content Include="01_WebForm\FrmHelloWorld.aspx" />
     <Content Include="Documentation\03_AppSession.txt" />
     <Content Include="Documentation\Page.txt" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +258,118 @@
     <Compile Include="05_RichControl\FileControl.aspx.designer.cs">
       <DependentUpon>FileControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="05_RichControl\FrmXml.aspx.cs">
+      <DependentUpon>FrmXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\FrmXml.aspx.designer.cs">
+      <DependentUpon>FrmXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\MultiView.aspx.cs">
+      <DependentUpon>MultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\MultiView.aspx.designer.cs">
+      <DependentUpon>MultiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\PanelControl.aspx.cs">
+      <DependentUpon>PanelControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\PanelControl.aspx.designer.cs">
+      <DependentUpon>PanelControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\PlaceHolder.aspx.cs">
+      <DependentUpon>PlaceHolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\PlaceHolder.aspx.designer.cs">
+      <DependentUpon>PlaceHolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\Substitution.aspx.cs">
+      <DependentUpon>Substitution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\Substitution.aspx.designer.cs">
+      <DependentUpon>Substitution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_RichControl\WizardControl.aspx.cs">
+      <DependentUpon>WizardControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_RichControl\WizardControl.aspx.designer.cs">
+      <DependentUpon>WizardControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\CheckBoxRequiredValidation.aspx.cs">
+      <DependentUpon>CheckBoxRequiredValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\CheckBoxRequiredValidation.aspx.designer.cs">
+      <DependentUpon>CheckBoxRequiredValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\CompareValidator.aspx.cs">
+      <DependentUpon>CompareValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\CompareValidator.aspx.designer.cs">
+      <DependentUpon>CompareValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\CustomerValidation.aspx.cs">
+      <DependentUpon>CustomerValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\CustomerValidation.aspx.designer.cs">
+      <DependentUpon>CustomerValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\DropDownListRequiredFieldValidator.aspx.cs">
+      <DependentUpon>DropDownListRequiredFieldValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\DropDownListRequiredFieldValidator.aspx.designer.cs">
+      <DependentUpon>DropDownListRequiredFieldValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\RangeValidation.aspx.cs">
+      <DependentUpon>RangeValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\RangeValidation.aspx.designer.cs">
+      <DependentUpon>RangeValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\RangeVAlidatorinJS.aspx.cs">
+      <DependentUpon>RangeVAlidatorinJS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\RangeVAlidatorinJS.aspx.designer.cs">
+      <DependentUpon>RangeVAlidatorinJS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\RegularExpressionValidator.aspx.cs">
+      <DependentUpon>RegularExpressionValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\RegularExpressionValidator.aspx.designer.cs">
+      <DependentUpon>RegularExpressionValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\RequireControl.aspx.cs">
+      <DependentUpon>RequireControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\RequireControl.aspx.designer.cs">
+      <DependentUpon>RequireControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_ValidationControl\ValidationSummary.aspx.cs">
+      <DependentUpon>ValidationSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_ValidationControl\ValidationSummary.aspx.designer.cs">
+      <DependentUpon>ValidationSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +378,8 @@
   <ItemGroup>
     <Content Include="Documentation\02_ASP.NET_Object.txt" />
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

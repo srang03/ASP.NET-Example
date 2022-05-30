@@ -1,0 +1,58 @@
+﻿유효성 검사 컨트롤
+	사용자의 입력값으로 정확한 데이터가 들어올 수 있도록 유도하는 유효성 검사 기능을 수행한다.
+	유효성 검사는 일반적으로 클라이언트 스크립트 언어인 자바스크립트나 제이쿼리 등을 사용하여 처리하는데 시간과 노력이 많이 드는 단점이 있다.
+	ASP.NET 서버 컨트로에는 유효성 검사 컨트롤이 있어서 손쉽게 유효성 검사가 가능하다.
+	자바스크립트 유효성 검사와 ASP.NET 유효성 검사 컨트롤을 같이 사용하여 놓치는 부분이 없는지 확인하면서 안정된 응용 프로그램을 만들 수 있다.
+
+[2] BaseValidator 클래스 상속
+	유효성 검사 컨트롤은 BaseValidator 클래스의 모든 기능을 상속하여 사용한다.
+		- ControlToValidate
+		- Display
+		- ErrorMesage
+		- ForeColor
+		- ValidationGroup
+		- SetFocusOnError
+
+[3] 유효성 컨트롤 종류
+ 	1) RequiredFieldValidator 
+	: 컨트롤 값을 반드시 입력 받고자 할 때 사용
+		
+		if(Page.IsValid){
+
+		}
+
+
+	2) RangeValidator
+	: 컨트롤에 들어올 값의 범위를 지정
+	범위 확인 유효성 검사 컨트롤을 사용하면 데이터 입력 받을 때 특정 범위의 데이터만 요청할 수 있다.
+	특정한 범위의 데이터만 입력 받고자할 때 사용하는 범위 확인 유효성 검사 컨트롤이다.
+	<asp:TextBox ID="txt_age" runat="server"></asp:TextBox>
+    <asp:RangeValidator ID="rvd_age" runat="server" ControlToValidate="txt_age" ErrorMessage="올바른 나이를 입력해주세요." MinimumValue="1" MaximumValue="150" Type="Integer" Display="Static" SetFocusOnError="true" />
+
+	3) CompareValidator
+	: 두 컨트롤의 값을 비교
+	비교 확인 유효성 검사 컨트롤은 암호와 암호 확인처럼 정확한 데이터를 입력했는지 확인하기 어려운 경우 두번 입력해 두 데이터가 같을때 통과시킨다.
+
+	4) RegularExpressionValidator
+	: 컨트롤 입력 데이터가 정규식에 맞는지 검사
+	회원가입 페이지에서 정확한 형식의 이메일, 홈페이지 URL, 주민등록번호, 카드번호 같이 일정한 규칙이 있는 데이터를 입력 받고자 할 때 유용하게 사용할 수 있다.
+
+	5) CustomValidator
+	: 사용자가 정의하여 기능을 추가적으로 만들어 사용
+	사용자 정의 유효성 검사 컨트롤을 크게 두 가지 스타일로 제공한다.
+	하나는 자바스크립트를 사용한 유효성 검사이고 다른 하나는 .cs파일에서 C#코드를 사용하여 수행하는 유효성 검사.
+
+	6) ValidationSummary 컨트롤
+	해당 에러 메시지를 손쉽게 한 곳에 모아서 출력하거나, 경고 대화상자를 통해서 출력할 수 있다.
+
+
+	7) Dynamic Validator
+	: 동적으로 유효성 검사를 추가
+
+	8) ValidationSummary
+	현재 웹 폼에 정의된 유효성 검사 컨트롤의 에러 메시지를 화면에 모아서 출력
+
+[4] 유효성 검사 사용 단계
+	1) NuGet 패키지 관리자를 사용해 제이쿼리를 추가한다.
+	2) NuGet 패키지 관리자를 사용하여 AspNet.ScriptManager.jQuery를 추가한다.
+	3) 웹 프로젝트 루트에 있는 Global.asax 파일의 Application_Start() 이벤트에 코드를 추가한다.

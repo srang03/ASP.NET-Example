@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
               	<ASP:FileUpload id="upload" width="450" runat="server" />
-            <asp:Button Text="버튼" runat="server" id="btn01" OnClick="btn01_Click"/>
+                <asp:Button Text="버튼" runat="server" id="btn01" OnClick="btn01_Click"/>
                 <asp:Label ID="resultLabel" runat="server" />
         </div>
     </form>

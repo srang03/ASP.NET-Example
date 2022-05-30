@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,11 +19,15 @@ namespace WebAppExample._05_RichControl
         {
             if (upload.HasFile)
             {
-                Response.Write("hello");
+                string extension = Path.GetExtension(upload.FileName);
+                string file_name = DateTime.Now.ToString("yyyyMMddHHmmssFFF") + extension;
+
+                upload.SaveAs(Server.MapPath(".") + "\\files\\" + file_name);
+                resultLabel.Text = String.Format("<a href='{0}{1}'>{1}</a>", "./files/", Server.UrlEncode(file_name));
             }
             else
             {
-                Response.Write("Bye");
+                
             }
         }
     }

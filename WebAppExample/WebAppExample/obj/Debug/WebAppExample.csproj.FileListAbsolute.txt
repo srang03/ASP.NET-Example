@@ -57,3 +57,4 @@ C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\WebAppExample\
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\WebAppExample\obj\Debug\WebAppExample.csproj.CopyComplete
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\WebAppExample\obj\Debug\WebAppExample.dll
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\WebAppExample\obj\Debug\WebAppExample.pdb
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\WebAppExample\bin\AspNet.ScriptManager.jQuery.dll
