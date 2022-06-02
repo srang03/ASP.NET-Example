@@ -118,6 +118,19 @@
     <Content Include="07_MasterPage\UserControl\CopyrightUserControl.ascx" />
     <Content Include="07_MasterPage\UserControl\FrmUserControl.aspx" />
     <Content Include="07_MasterPage\UserControl\NavigatorUserControl.ascx" />
+    <Content Include="08_Theme\FrmTheme.aspx" />
+    <Content Include="09_SiteMapPath\FrmIntroduction.aspx" />
+    <Content Include="09_SiteMapPath\FrmLecture.aspx" />
+    <Content Include="09_SiteMapPath\FrmNavigationControl.aspx" />
+    <Content Include="09_SiteMapPath\FrmStieMapPath.aspx" />
+    <Content Include="10_MenuControl\FrmMenu.aspx" />
+    <Content Include="10_MenuControl\FrmTreeView.aspx" />
+    <Content Include="11_StatusManagement\FrmCachingResponseCache.aspx" />
+    <Content Include="11_StatusManagement\FrmCounter.aspx" />
+    <Content Include="11_StatusManagement\FrmStatusManagement.aspx" />
+    <Content Include="11_StatusManagement\FrmStatusShow.aspx" />
+    <Content Include="11_StatusManagement\WebUserControl1.ascx" />
+    <Content Include="App_Themes\BlueSkin\BlueSkin.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -170,6 +183,8 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="07_MasterPage\MasterTemplate\Site1.Master" />
+    <Content Include="App_Themes\BlueSkin\BlueSkin.skin" />
+    <Content Include="Web.sitemap" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -465,6 +480,90 @@
     <Compile Include="07_MasterPage\UserControl\NavigatorUserControl.ascx.designer.cs">
       <DependentUpon>NavigatorUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="08_Theme\FrmTheme.aspx.cs">
+      <DependentUpon>FrmTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="08_Theme\FrmTheme.aspx.designer.cs">
+      <DependentUpon>FrmTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmIntroduction.aspx.cs">
+      <DependentUpon>FrmIntroduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmIntroduction.aspx.designer.cs">
+      <DependentUpon>FrmIntroduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmLecture.aspx.cs">
+      <DependentUpon>FrmLecture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmLecture.aspx.designer.cs">
+      <DependentUpon>FrmLecture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmNavigationControl.aspx.cs">
+      <DependentUpon>FrmNavigationControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmNavigationControl.aspx.designer.cs">
+      <DependentUpon>FrmNavigationControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmStieMapPath.aspx.cs">
+      <DependentUpon>FrmStieMapPath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_SiteMapPath\FrmStieMapPath.aspx.designer.cs">
+      <DependentUpon>FrmStieMapPath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10_MenuControl\FrmMenu.aspx.cs">
+      <DependentUpon>FrmMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10_MenuControl\FrmMenu.aspx.designer.cs">
+      <DependentUpon>FrmMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10_MenuControl\FrmTreeView.aspx.cs">
+      <DependentUpon>FrmTreeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10_MenuControl\FrmTreeView.aspx.designer.cs">
+      <DependentUpon>FrmTreeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmCachingResponseCache.aspx.cs">
+      <DependentUpon>FrmCachingResponseCache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmCachingResponseCache.aspx.designer.cs">
+      <DependentUpon>FrmCachingResponseCache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmCounter.aspx.cs">
+      <DependentUpon>FrmCounter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmCounter.aspx.designer.cs">
+      <DependentUpon>FrmCounter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmStatusManagement.aspx.cs">
+      <DependentUpon>FrmStatusManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmStatusManagement.aspx.designer.cs">
+      <DependentUpon>FrmStatusManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmStatusShow.aspx.cs">
+      <DependentUpon>FrmStatusShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11_StatusManagement\FrmStatusShow.aspx.designer.cs">
+      <DependentUpon>FrmStatusShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11_StatusManagement\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11_StatusManagement\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -492,7 +591,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
