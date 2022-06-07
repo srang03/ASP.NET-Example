@@ -1,7 +1,0 @@
-﻿CREATE PROCEDURE dbo.DeleteMemo
-(
-	@NUM INT
-)
-AS
-	DELETE FROM dbo.Memos WHERE NUM = @NUM;
-GO

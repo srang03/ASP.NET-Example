@@ -10,8 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="btn_connection" runat="server" Text="DB 연결하기" OnClick="btn_connection_Click" />
-            <asp:Label ID="lbl_result" runat="server" />
+            <asp:Button Id="btn_sqlConnection" Text="SQL 연결" runat="server" onClick="btn_sqlConnection_Click"/>
+            <asp:Label ID="lbl_sqlConnection" runat="server" />
         </div>
     </form>
 </body>

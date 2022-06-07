@@ -67,16 +67,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FrmDataAdapter.aspx" />
+    <Content Include="FrmSqlCommand.aspx" />
     <Content Include="FrmSqlConnection.aspx" />
+    <Content Include="FrmSqlDataReader.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDataAdapter.aspx.cs">
+      <DependentUpon>FrmDataAdapter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDataAdapter.aspx.designer.cs">
+      <DependentUpon>FrmDataAdapter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSqlCommand.aspx.cs">
+      <DependentUpon>FrmSqlCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSqlCommand.aspx.designer.cs">
+      <DependentUpon>FrmSqlCommand.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmSqlConnection.aspx.cs">
       <DependentUpon>FrmSqlConnection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrmSqlConnection.aspx.designer.cs">
       <DependentUpon>FrmSqlConnection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSqlDataReader.aspx.cs">
+      <DependentUpon>FrmSqlDataReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSqlDataReader.aspx.designer.cs">
+      <DependentUpon>FrmSqlDataReader.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -91,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Documents\" />
+    <Folder Include="DocumentReview\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace DevADONETProject
 {
@@ -18,29 +11,24 @@ namespace DevADONETProject
 
         }
 
-        protected void btn_connection_Click(object sender, EventArgs e)
+        protected void btn_sqlConnection_Click(object sender, EventArgs e)
         {
+            // [1] SqlConnection 클래스 인스턴스 생성
             SqlConnection conn = new SqlConnection();
 
-
+            // [2] ConnectionString 속성 설정
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
+            // [3] DB 오픈
             conn.Open();
-            lbl_result.Text = conn.State.ToString();
 
-            SqlCommand cmd = new SqlCommand();
+            // [4] 실행
+            lbl_sqlConnection.Text = conn.State.ToString();
 
-            cmd.Connection = conn;
-            cmd.CommandText = @"
-                INSERT INTO dbo.Memos VALUES ('홍길동', 'h@h.com', '타이틀 테스트', GETDATE(), '127.0.0.1')
-            ";
-
-            cmd.CommandType = CommandType.Text;
-            cmd.ExecuteNonQuery();
-
-            lbl_result.Text = "데이터 저장 완료";
+            // [5] 연결 종료
             conn.Close();
-  
+
+            
         }
     }
 }
