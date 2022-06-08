@@ -67,41 +67,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FrmDataAdapter.aspx" />
-    <Content Include="FrmSqlCommand.aspx" />
-    <Content Include="FrmSqlConnection.aspx" />
-    <Content Include="FrmSqlDataReader.aspx" />
+    <Content Include="12_ADO.NET\ExerciseADONET.aspx" />
+    <Content Include="12_ADO.NET\FrmDataAdapter.aspx" />
+    <Content Include="12_ADO.NET\FrmSqlCommand.aspx" />
+    <Content Include="12_ADO.NET\FrmSqlConnection.aspx" />
+    <Content Include="12_ADO.NET\FrmSqlDataReader.aspx" />
+    <Content Include="13_CRUD\CRUD.txt" />
+    <Content Include="13_CRUD\FrmMemoCreate.aspx" />
+    <Content Include="13_CRUD\FrmMemoDelete.aspx" />
+    <Content Include="13_CRUD\FrmMemoList.aspx" />
+    <Content Include="13_CRUD\FrmMemoModify.aspx" />
+    <Content Include="13_CRUD\FrmMemoView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmDataAdapter.aspx.cs">
+    <Compile Include="12_ADO.NET\ExerciseADONET.aspx.cs">
+      <DependentUpon>ExerciseADONET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="12_ADO.NET\ExerciseADONET.aspx.designer.cs">
+      <DependentUpon>ExerciseADONET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="12_ADO.NET\FrmDataAdapter.aspx.cs">
       <DependentUpon>FrmDataAdapter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmDataAdapter.aspx.designer.cs">
+    <Compile Include="12_ADO.NET\FrmDataAdapter.aspx.designer.cs">
       <DependentUpon>FrmDataAdapter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmSqlCommand.aspx.cs">
+    <Compile Include="12_ADO.NET\FrmSqlCommand.aspx.cs">
       <DependentUpon>FrmSqlCommand.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmSqlCommand.aspx.designer.cs">
+    <Compile Include="12_ADO.NET\FrmSqlCommand.aspx.designer.cs">
       <DependentUpon>FrmSqlCommand.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmSqlConnection.aspx.cs">
+    <Compile Include="12_ADO.NET\FrmSqlConnection.aspx.cs">
       <DependentUpon>FrmSqlConnection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmSqlConnection.aspx.designer.cs">
+    <Compile Include="12_ADO.NET\FrmSqlConnection.aspx.designer.cs">
       <DependentUpon>FrmSqlConnection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmSqlDataReader.aspx.cs">
+    <Compile Include="12_ADO.NET\FrmSqlDataReader.aspx.cs">
       <DependentUpon>FrmSqlDataReader.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmSqlDataReader.aspx.designer.cs">
+    <Compile Include="12_ADO.NET\FrmSqlDataReader.aspx.designer.cs">
       <DependentUpon>FrmSqlDataReader.aspx</DependentUpon>
     </Compile>
+    <Compile Include="13_CRUD\FrmMemoCreate.aspx.cs">
+      <DependentUpon>FrmMemoCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoCreate.aspx.designer.cs">
+      <DependentUpon>FrmMemoCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoDelete.aspx.cs">
+      <DependentUpon>FrmMemoDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoDelete.aspx.designer.cs">
+      <DependentUpon>FrmMemoDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoList.aspx.cs">
+      <DependentUpon>FrmMemoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoList.aspx.designer.cs">
+      <DependentUpon>FrmMemoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoModify.aspx.cs">
+      <DependentUpon>FrmMemoModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoModify.aspx.designer.cs">
+      <DependentUpon>FrmMemoModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoView.aspx.cs">
+      <DependentUpon>FrmMemoView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_CRUD\FrmMemoView.aspx.designer.cs">
+      <DependentUpon>FrmMemoView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_CRUD\Memo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
