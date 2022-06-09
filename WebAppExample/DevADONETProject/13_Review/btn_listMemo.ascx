@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="btn_listMemo.ascx.cs" Inherits="DevADONETProject._13_Review.btn_listMemo" %>
+  <asp:HyperLink ID="hpl_memoView" runat="server" Text="글 목록" NavigateUrl="FrmMemoList.aspx" />

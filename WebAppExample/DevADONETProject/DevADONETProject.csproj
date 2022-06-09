@@ -78,6 +78,12 @@
     <Content Include="13_CRUD\FrmMemoList.aspx" />
     <Content Include="13_CRUD\FrmMemoModify.aspx" />
     <Content Include="13_CRUD\FrmMemoView.aspx" />
+    <Content Include="13_Review\btn_listMemo.ascx" />
+    <Content Include="13_Review\FrmMemoCreate.aspx" />
+    <Content Include="13_Review\FrmMemoDelete.aspx" />
+    <Content Include="13_Review\FrmMemoList.aspx" />
+    <Content Include="13_Review\FrmMemoModify.aspx" />
+    <Content Include="13_Review\FrmMemoView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +158,49 @@
       <DependentUpon>FrmMemoView.aspx</DependentUpon>
     </Compile>
     <Compile Include="13_CRUD\Memo.cs" />
+    <Compile Include="13_Review\btn_listMemo.ascx.cs">
+      <DependentUpon>btn_listMemo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Review\btn_listMemo.ascx.designer.cs">
+      <DependentUpon>btn_listMemo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoCreate.aspx.cs">
+      <DependentUpon>FrmMemoCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoCreate.aspx.designer.cs">
+      <DependentUpon>FrmMemoCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoDelete.aspx.cs">
+      <DependentUpon>FrmMemoDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoDelete.aspx.designer.cs">
+      <DependentUpon>FrmMemoDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoList.aspx.cs">
+      <DependentUpon>FrmMemoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoList.aspx.designer.cs">
+      <DependentUpon>FrmMemoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoModify.aspx.cs">
+      <DependentUpon>FrmMemoModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoModify.aspx.designer.cs">
+      <DependentUpon>FrmMemoModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoView.aspx.cs">
+      <DependentUpon>FrmMemoView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Review\FrmMemoView.aspx.designer.cs">
+      <DependentUpon>FrmMemoView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Review\ShowDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
