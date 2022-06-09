@@ -57,3 +57,5 @@ C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevADONETProje
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevADONETProject\obj\Debug\DevADONETProject.csproj.CopyComplete
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevADONETProject\obj\Debug\DevADONETProject.dll
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevADONETProject\obj\Debug\DevADONETProject.pdb
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevADONETProject\bin\Dapper.dll
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevADONETProject\bin\Dapper.xml

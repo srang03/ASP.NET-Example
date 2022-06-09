@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ListEvidence.ascx.cs" Inherits="DevADONETProject._14_Dapper.Common.EditEvidence" %>
+  <asp:HyperLink ID="hpl_edit" Text="글목록" runat="server" NavigateUrl="../FrmListEvidence.aspx" />

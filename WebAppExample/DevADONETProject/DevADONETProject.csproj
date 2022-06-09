@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -84,6 +87,19 @@
     <Content Include="13_Review\FrmMemoList.aspx" />
     <Content Include="13_Review\FrmMemoModify.aspx" />
     <Content Include="13_Review\FrmMemoView.aspx" />
+    <Content Include="14_Dapper\Common\CreateEvidence.ascx" />
+    <Content Include="14_Dapper\Common\ListEvidence.ascx" />
+    <Content Include="14_Dapper\Dapper.txt" />
+    <Content Include="14_Dapper\Exercise\FrmOrm.aspx" />
+    <Content Include="14_Dapper\FrmCreateEvidence.aspx" />
+    <Content Include="14_Dapper\FrmDeleteEvidence.aspx" />
+    <Content Include="14_Dapper\FrmEditEvidence.aspx" />
+    <Content Include="14_Dapper\FrmListEvidence.aspx" />
+    <Content Include="14_Dapper\FrmViewEvidence.aspx" />
+    <Content Include="App_Data\DebOrm.mdf" />
+    <Content Include="App_Data\DebOrm_log.ldf">
+      <DependentUpon>DebOrm.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +217,64 @@
       <DependentUpon>FrmMemoView.aspx</DependentUpon>
     </Compile>
     <Compile Include="13_Review\ShowDetail.cs" />
+    <Compile Include="14_Dapper\Common\CreateEvidence.ascx.cs">
+      <DependentUpon>CreateEvidence.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\Common\CreateEvidence.ascx.designer.cs">
+      <DependentUpon>CreateEvidence.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\Common\ListEvidence.ascx.cs">
+      <DependentUpon>ListEvidence.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\Common\ListEvidence.ascx.designer.cs">
+      <DependentUpon>ListEvidence.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\Evidence.cs" />
+    <Compile Include="14_Dapper\Exercise\FrmOrm.aspx.cs">
+      <DependentUpon>FrmOrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\Exercise\FrmOrm.aspx.designer.cs">
+      <DependentUpon>FrmOrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\FrmCreateEvidence.aspx.cs">
+      <DependentUpon>FrmCreateEvidence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\FrmCreateEvidence.aspx.designer.cs">
+      <DependentUpon>FrmCreateEvidence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\EvidenceRepository.cs" />
+    <Compile Include="14_Dapper\FrmDeleteEvidence.aspx.cs">
+      <DependentUpon>FrmDeleteEvidence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\FrmDeleteEvidence.aspx.designer.cs">
+      <DependentUpon>FrmDeleteEvidence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\FrmEditEvidence.aspx.cs">
+      <DependentUpon>FrmEditEvidence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\FrmEditEvidence.aspx.designer.cs">
+      <DependentUpon>FrmEditEvidence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\FrmListEvidence.aspx.cs">
+      <DependentUpon>FrmListEvidence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\FrmListEvidence.aspx.designer.cs">
+      <DependentUpon>FrmListEvidence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\FrmViewEvidence.aspx.cs">
+      <DependentUpon>FrmViewEvidence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper\FrmViewEvidence.aspx.designer.cs">
+      <DependentUpon>FrmViewEvidence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper\IEvidenceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -213,7 +287,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="DocumentReview\" />
   </ItemGroup>
   <PropertyGroup>
