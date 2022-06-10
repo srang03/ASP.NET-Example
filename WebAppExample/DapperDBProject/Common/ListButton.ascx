@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ListButton.ascx.cs" Inherits="DapperDBProject.Common.ListButton" %>
+<asp:HyperLink NavigateUrl="../ListModel.aspx" runat="server"  Text="목록 보기"/>

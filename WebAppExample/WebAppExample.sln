@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppExample", "WebAppExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevADONETProject", "DevADONETProject\DevADONETProject.csproj", "{EB4FEE4B-D16B-4789-B945-7206CD3FBC56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDBProject", "DapperDBProject\DapperDBProject.csproj", "{911BBFCC-A503-4148-A23B-D1019F941CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EB4FEE4B-D16B-4789-B945-7206CD3FBC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB4FEE4B-D16B-4789-B945-7206CD3FBC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB4FEE4B-D16B-4789-B945-7206CD3FBC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CraeteButton.ascx.cs" Inherits="DapperDBProject.Common.WebUserControl1" %>
+<asp:HyperLink ID="hpl_createModel" runat="server" NavigateUrl="../CreateModel.aspx" text="글쓰기"/>
