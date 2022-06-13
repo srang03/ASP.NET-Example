@@ -130,6 +130,8 @@
     <Content Include="11_StatusManagement\FrmStatusManagement.aspx" />
     <Content Include="11_StatusManagement\FrmStatusShow.aspx" />
     <Content Include="11_StatusManagement\WebUserControl1.ascx" />
+    <Content Include="15_DataControl\DataControl.txt" />
+    <Content Include="15_DataControl\FrmDataControlDemo.aspx" />
     <Content Include="App_Themes\BlueSkin\BlueSkin.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -564,6 +566,13 @@
     <Compile Include="11_StatusManagement\WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
+    <Compile Include="15_DataControl\FrmDataControlDemo.aspx.cs">
+      <DependentUpon>FrmDataControlDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmDataControlDemo.aspx.designer.cs">
+      <DependentUpon>FrmDataControlDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -589,6 +598,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="16_Dapper Review\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

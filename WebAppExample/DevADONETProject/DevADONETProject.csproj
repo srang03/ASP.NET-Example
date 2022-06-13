@@ -87,6 +87,11 @@
     <Content Include="13_Review\FrmMemoList.aspx" />
     <Content Include="13_Review\FrmMemoModify.aspx" />
     <Content Include="13_Review\FrmMemoView.aspx" />
+    <Content Include="14_Dapper Review\BrowseReview.aspx" />
+    <Content Include="14_Dapper Review\CreateReivew.aspx" />
+    <Content Include="14_Dapper Review\DeleteReview.aspx" />
+    <Content Include="14_Dapper Review\ReadAllReview.aspx" />
+    <Content Include="14_Dapper Review\UpdateReview.aspx" />
     <Content Include="14_Dapper\Common\CreateEvidence.ascx" />
     <Content Include="14_Dapper\Common\ListEvidence.ascx" />
     <Content Include="14_Dapper\Dapper.txt" />
@@ -96,10 +101,41 @@
     <Content Include="14_Dapper\FrmEditEvidence.aspx" />
     <Content Include="14_Dapper\FrmListEvidence.aspx" />
     <Content Include="14_Dapper\FrmViewEvidence.aspx" />
+    <Content Include="15_DataControl\DataControl.txt" />
+    <Content Include="15_DataControl\FrmDataControlDemo.aspx" />
+    <Content Include="15_DataControl\FrmDataList.aspx" />
+    <Content Include="15_DataControl\FrmRepeater.aspx" />
     <Content Include="App_Data\DebOrm.mdf" />
     <Content Include="App_Data\DebOrm_log.ldf">
       <DependentUpon>DebOrm.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +253,45 @@
       <DependentUpon>FrmMemoView.aspx</DependentUpon>
     </Compile>
     <Compile Include="13_Review\ShowDetail.cs" />
+    <Compile Include="14_Dapper Review\BrowseReview.aspx.cs">
+      <DependentUpon>BrowseReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper Review\BrowseReview.aspx.designer.cs">
+      <DependentUpon>BrowseReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper Review\Repository\Connection.cs" />
+    <Compile Include="14_Dapper Review\CreateReivew.aspx.cs">
+      <DependentUpon>CreateReivew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper Review\CreateReivew.aspx.designer.cs">
+      <DependentUpon>CreateReivew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper Review\DeleteReview.aspx.cs">
+      <DependentUpon>DeleteReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper Review\DeleteReview.aspx.designer.cs">
+      <DependentUpon>DeleteReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper Review\Repository\IReviewService.cs" />
+    <Compile Include="14_Dapper Review\ReadAllReview.aspx.cs">
+      <DependentUpon>ReadAllReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper Review\ReadAllReview.aspx.designer.cs">
+      <DependentUpon>ReadAllReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_Dapper Review\Repository\Review.cs" />
+    <Compile Include="14_Dapper Review\Repository\ReviewService.cs" />
+    <Compile Include="14_Dapper Review\UpdateReview.aspx.cs">
+      <DependentUpon>UpdateReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_Dapper Review\UpdateReview.aspx.designer.cs">
+      <DependentUpon>UpdateReview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="14_Dapper\Common\CreateEvidence.ascx.cs">
       <DependentUpon>CreateEvidence.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -275,10 +350,52 @@
       <DependentUpon>FrmViewEvidence.aspx</DependentUpon>
     </Compile>
     <Compile Include="14_Dapper\IEvidenceService.cs" />
+    <Compile Include="15_DataControl\FrmDataControlDemo.aspx.cs">
+      <DependentUpon>FrmDataControlDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmDataList.aspx.cs">
+      <DependentUpon>FrmDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmDataList.aspx.designer.cs">
+      <DependentUpon>FrmDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_DataControl\FrmRepeater.aspx.cs">
+      <DependentUpon>FrmRepeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmRepeater.aspx.designer.cs">
+      <DependentUpon>FrmRepeater.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -287,6 +404,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="14_Dapper Review\Document\" />
     <Folder Include="DocumentReview\" />
   </ItemGroup>
   <PropertyGroup>
