@@ -46,6 +46,9 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="Json.Net, Version=1.0.33.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Json.Net.1.0.33\lib\netstandard2.0\Json.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -104,7 +107,13 @@
     <Content Include="15_DataControl\DataControl.txt" />
     <Content Include="15_DataControl\FrmDataControlDemo.aspx" />
     <Content Include="15_DataControl\FrmDataList.aspx" />
+    <Content Include="15_DataControl\FrmDetailsView.aspx" />
+    <Content Include="15_DataControl\FrmFormView.aspx" />
+    <Content Include="15_DataControl\FrmGridView.aspx" />
     <Content Include="15_DataControl\FrmRepeater.aspx" />
+    <Content Include="15_DataControl\FrmXmlDataSource.aspx" />
+    <Content Include="15_DataControl\FrmXmlDataSource.xml" />
+    <Content Include="15_DataControl\ObjectDataSource.aspx" />
     <Content Include="App_Data\DebOrm.mdf" />
     <Content Include="App_Data\DebOrm_log.ldf">
       <DependentUpon>DebOrm.mdf</DependentUpon>
@@ -125,6 +134,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="jstree\jstree.aspx" />
+    <Content Include="jstree\jsTreeExample.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -361,12 +372,62 @@
     <Compile Include="15_DataControl\FrmDataList.aspx.designer.cs">
       <DependentUpon>FrmDataList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="15_DataControl\FrmDetailsView.aspx.cs">
+      <DependentUpon>FrmDetailsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmDetailsView.aspx.designer.cs">
+      <DependentUpon>FrmDetailsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_DataControl\FrmFormView.aspx.cs">
+      <DependentUpon>FrmFormView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmFormView.aspx.designer.cs">
+      <DependentUpon>FrmFormView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_DataControl\FrmGridView.aspx.cs">
+      <DependentUpon>FrmGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmGridView.aspx.designer.cs">
+      <DependentUpon>FrmGridView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="15_DataControl\FrmRepeater.aspx.cs">
       <DependentUpon>FrmRepeater.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="15_DataControl\FrmRepeater.aspx.designer.cs">
       <DependentUpon>FrmRepeater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_DataControl\FrmXmlDataSource.aspx.cs">
+      <DependentUpon>FrmXmlDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\FrmXmlDataSource.aspx.designer.cs">
+      <DependentUpon>FrmXmlDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_DataControl\ObjectDataSource.aspx.cs">
+      <DependentUpon>ObjectDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_DataControl\ObjectDataSource.aspx.designer.cs">
+      <DependentUpon>ObjectDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_DataControl\ObjectDataSourceClass.cs" />
+    <Compile Include="jstree\jstree.aspx.cs">
+      <DependentUpon>jstree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jstree\jstree.aspx.designer.cs">
+      <DependentUpon>jstree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jstree\jsTreeExample.aspx.cs">
+      <DependentUpon>jsTreeExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jstree\jsTreeExample.aspx.designer.cs">
+      <DependentUpon>jsTreeExample.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

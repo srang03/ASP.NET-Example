@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Interests>
+	<Interest>
+		<title>SQL Server</title>
+		<description>Database Management</description>
+	</Interest>
+	<Interest>
+		<title>Dapper</title>
+		<description>ORM System</description>
+	</Interest>
+	<Interest>
+		<title>ASP.NET</title>
+		<description>Web Project</description>
+	</Interest>
+</Interests> 

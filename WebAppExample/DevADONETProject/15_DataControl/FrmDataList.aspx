@@ -17,10 +17,10 @@
                 </HeaderTemplate>
                 <ItemTemplate>
                     <%# Eval("NAME") %>
-                    <%# Eval("TITLE") % >
+                    <%# Eval("TITLE") %>
                 </ItemTemplate>
             </asp:DataList>
-            <asp:SqlDataSource ID="sds_list" runat="server" 
+            <asp:SqlDataSource ID="sds_list" runat="server"
                 ConnectionString="<%$ ConnectionStrings:DevADONETReviewConnectionString %>" 
                 SelectCommand="SELECT ID, NAME, TITLE FROM dbo.Memos ORDER BY ID DESC">
             </asp:SqlDataSource>

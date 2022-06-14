@@ -11,7 +11,7 @@ namespace DevADONETProject._15_DataControl
 {
 
 
-    public partial class FrmDataList
+    public partial class FrmFormView
     {
 
         /// <summary>
@@ -24,21 +24,21 @@ namespace DevADONETProject._15_DataControl
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// dl_list 컨트롤입니다.
+        /// fv_list 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dl_list;
+        protected global::System.Web.UI.WebControls.FormView fv_list;
 
         /// <summary>
-        /// sds_list 컨트롤입니다.
+        /// sds_memo 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sds_list;
+        protected global::System.Web.UI.WebControls.SqlDataSource sds_memo;
     }
 }
