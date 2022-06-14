@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevADONETProject", "DevADON
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDBProject", "DapperDBProject\DapperDBProject.csproj", "{911BBFCC-A503-4148-A23B-D1019F941CFE}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DevDatabase", "DevDatabase\DevDatabase.sqlproj", "{970FB020-45D2-4908-893B-8FB3F5A75BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevUser", "DevUser\DevUser.csproj", "{BF0354FD-8E2B-4C52-8899-764592E8D452}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,16 @@ Global
 		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{911BBFCC-A503-4148-A23B-D1019F941CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970FB020-45D2-4908-893B-8FB3F5A75BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970FB020-45D2-4908-893B-8FB3F5A75BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970FB020-45D2-4908-893B-8FB3F5A75BEA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{970FB020-45D2-4908-893B-8FB3F5A75BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970FB020-45D2-4908-893B-8FB3F5A75BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970FB020-45D2-4908-893B-8FB3F5A75BEA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BF0354FD-8E2B-4C52-8899-764592E8D452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0354FD-8E2B-4C52-8899-764592E8D452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0354FD-8E2B-4C52-8899-764592E8D452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0354FD-8E2B-4C52-8899-764592E8D452}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

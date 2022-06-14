@@ -1,0 +1,50 @@
+﻿ALTER SERVER ROLE [sysadmin] ADD MEMBER [DESKTOP-7T67K5V\Ian];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\SQLWriter];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\Winmgmt];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT Service\MSSQLSERVER];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\SQLSERVERAGENT];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [securityadmin] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [serveradmin] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [setupadmin] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [processadmin] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [diskadmin] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [dbcreator] ADD MEMBER [root];
+
+
+GO
+ALTER SERVER ROLE [bulkadmin] ADD MEMBER [root];
+
