@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3>회원 관리</h3>
+            <h3>회원 관리</h3>`
             <asp:LoginView ID="lgv_view" runat="server">
                 <AnonymousTemplate>
                     <!-- 로그인 전 -->
@@ -23,6 +23,7 @@
                     <asp:HyperLink ID="hpl_userinfo" runat="server" NavigateUrl="UserInfo.aspx">
                         <asp:LoginName ID="lgn_name" runat="server" />
                     </asp:HyperLink>
+                    <asp:HyperLink ID="hpl_adminView" runat="server" NavigateUrl="Admin/Default.aspx" text="어드민 화면" />
                 </LoggedInTemplate>
             </asp:LoginView>
         </div>

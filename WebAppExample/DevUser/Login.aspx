@@ -18,7 +18,7 @@
                 </tr>
                 <tr>
                     <td>비밀번호</td>
-                    <td><asp:TextBox ID="txb_pw" runat="server"/></td>
+                    <td><asp:TextBox ID="txb_pw" runat="server" TextMode="Password"/></td>
                 </tr>
             </table>
             <asp:Button Text="로그인" runat="server" ID="btn_login" OnClick="btn_login_Click" />

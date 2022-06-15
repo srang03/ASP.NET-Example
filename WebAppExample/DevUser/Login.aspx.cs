@@ -29,15 +29,18 @@ namespace DevUser
                 {
                     // 인증 쿠키값 부여
                     FormsAuthentication.RedirectFromLoginPage(id, false);
+                    Response.Redirect("Welcome.aspx");
                 }
                 else
                 {
-
+                    FormsAuthentication.SetAuthCookie(id, false);
+                    Response.Redirect("Welcome.aspx");
                 }
             }
             else
             {
-
+                Page.ClientScript.RegisterStartupScript(
+                    this.GetType(), "showMsg", "<script>alert('아이디와 비밀번호가 다릅니다');</script>");
             }
         }
     }

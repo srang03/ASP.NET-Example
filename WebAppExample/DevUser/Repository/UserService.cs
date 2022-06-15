@@ -43,15 +43,31 @@ namespace DevUser.Repository
             return conn.Query<UserModel>(proc, parms, commandType:CommandType.StoredProcedure).Single();
         }
 
+        public UserModel GetUser(string userid)
+        {
+            string proc = "dbo.ViewUsersByUserId";
+            var parms = new DynamicParameters();
+            parms.Add("@USERID", userid);
+            return conn.Query<UserModel>(proc, parms, commandType: CommandType.StoredProcedure).Single();
+        }
+
         public bool IsCollectUser(string userId, string userPassword)
         {
+            conn.Open();
             string proc = "dbo.IsCollectUser";
-            var parm = new DynamicParameters();
-            parm.Add("@USERID", userId);
-            parm.Add("@USERPASSWORD", userPassword);
-            var res = conn.Execute(proc, parm, commandType: CommandType.StoredProcedure);
-
-            return res > 0;
+            bool res = false;
+            SqlCommand cmd = new SqlCommand(proc, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@USERID", userId);
+            cmd.Parameters.AddWithValue("@USERPASSWORD", userPassword);
+            SqlDataReader dr = cmd.ExecuteReader();
+            
+            if (dr.Read())
+            {
+                res = true;
+            }
+            conn.Close();
+            return res;
         }
 
         public List<UserModel> ListUser()
