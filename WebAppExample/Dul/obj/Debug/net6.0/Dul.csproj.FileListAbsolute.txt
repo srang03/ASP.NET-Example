@@ -1,0 +1,12 @@
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.csproj.AssemblyReference.cache
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.AssemblyInfoInputs.cache
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.AssemblyInfo.cs
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.csproj.CoreCompileInputs.cache
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\bin\Debug\net6.0\Dul.deps.json
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\bin\Debug\net6.0\Dul.dll
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\bin\Debug\net6.0\Dul.pdb
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.dll
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\refint\Dul.dll
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\Dul.pdb
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\net6.0\ref\Dul.dll

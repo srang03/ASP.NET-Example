@@ -1,0 +1,5 @@
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\netcoreapp3.1\Dul.csproj.AssemblyReference.cache
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\netcoreapp3.1\Dul.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\netcoreapp3.1\Dul.AssemblyInfoInputs.cache
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\netcoreapp3.1\Dul.AssemblyInfo.cs
+C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\Dul\obj\Debug\netcoreapp3.1\Dul.csproj.CoreCompileInputs.cache

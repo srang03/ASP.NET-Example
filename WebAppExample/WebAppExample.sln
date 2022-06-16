@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevUser", "DevUser\DevUser.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevUserReview", "DevUserReview\DevUserReview.csproj", "{06364CBF-4BB0-4E12-A398-4BE6431010A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dul", "Dul\Dul.csproj", "{F2DFD496-D763-40E2-9A8A-83596D9515ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{06364CBF-4BB0-4E12-A398-4BE6431010A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06364CBF-4BB0-4E12-A398-4BE6431010A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06364CBF-4BB0-4E12-A398-4BE6431010A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DFD496-D763-40E2-9A8A-83596D9515ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DFD496-D763-40E2-9A8A-83596D9515ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DFD496-D763-40E2-9A8A-83596D9515ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DFD496-D763-40E2-9A8A-83596D9515ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
