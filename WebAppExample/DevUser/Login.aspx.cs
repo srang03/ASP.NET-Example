@@ -22,7 +22,7 @@ namespace DevUser
             string pw = this.txb_pw.Text.Trim();
 
             var service = new UserService();
-            if(service.IsCollectUser(id, pw))
+            if(service.IsCollectUser(id, pw, out int num))
             {
                 // [1] 인증 부여
                 if (!String.IsNullOrEmpty(Request.QueryString["ReturnUrl"]))

@@ -15,10 +15,11 @@ namespace DevUser.Repository
 
         bool ModifyUser(UserModel user);
 
-        bool IsCollectUser(string userId, string userPassword);
+        // bool IsCollectUser(string userId, string userPassword);
 
         bool DeleteUser(int id);
 
         List<UserModel> ListUser();
+        bool IsCollectUser(string userId, string userPassword, out int id);
     }
 }

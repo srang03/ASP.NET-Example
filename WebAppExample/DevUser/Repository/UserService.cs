@@ -17,6 +17,11 @@ namespace DevUser.Repository
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conn"].ConnectionString);
         }
 
+        public UserModel CreateUserModel(string userId, string userPassword)
+        {
+            return new UserModel(userId, userPassword);
+        }
+
         public void AddUser(UserModel user)
         {
             string proc = "dbo.CreateUsers";
@@ -51,10 +56,11 @@ namespace DevUser.Repository
             return conn.Query<UserModel>(proc, parms, commandType: CommandType.StoredProcedure).Single();
         }
 
-        public bool IsCollectUser(string userId, string userPassword)
+        public bool IsCollectUser(string userId, string userPassword,out int id)
         {
             conn.Open();
             string proc = "dbo.IsCollectUser";
+            id = -1;
             bool res = false;
             SqlCommand cmd = new SqlCommand(proc, conn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -64,6 +70,7 @@ namespace DevUser.Repository
             
             if (dr.Read())
             {
+                id = int.Parse(dr["ID"].ToString());
                 res = true;
             }
             conn.Close();

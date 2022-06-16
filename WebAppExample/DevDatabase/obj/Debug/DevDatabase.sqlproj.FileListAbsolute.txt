@@ -2,9 +2,5 @@ C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\bi
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\bin\Debug\DevDatabase.dll
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\bin\Debug\DevDatabase.pdb
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\DevDatabase.sqlproj.AssemblyReference.cache
-C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\Model.xml
-C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\refactor.xml
-C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\postdeploy.sql
-C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\predeploy.sql
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\DevDatabase.dll
 C:\Users\Ian\Desktop\ian\C#\ASP.NET\ASP.NET-Example\WebAppExample\DevDatabase\obj\Debug\DevDatabase.pdb
