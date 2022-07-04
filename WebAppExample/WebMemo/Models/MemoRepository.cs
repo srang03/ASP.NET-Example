@@ -72,6 +72,11 @@ namespace WebMemo.Models
             _proc = "BrowseMemo";
             return _conn.Query<MemoModel>(_proc, _parms, commandType: _commandType).SingleOrDefault();
         }
+        public int GetCountRecord()
+        {
+            _proc = "GetCountRecord";
+            return _conn.Query<int>(_proc, null, commandType: System.Data.CommandType.StoredProcedure).SingleOrDefault();
+        }
 
     }
 }

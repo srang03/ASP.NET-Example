@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h3>로그아웃 되었습니다.</h3>
         </div>
     </form>
 </body>

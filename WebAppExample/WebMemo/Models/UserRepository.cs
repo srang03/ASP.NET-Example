@@ -18,13 +18,13 @@ namespace WebMemo.Models
             _proc = string.Empty;
         }
 
-        public bool IsCollectUser(string email, string password)
+        public int IsCollectUser(string email, string password)
         {
             DynamicParameters parms = new DynamicParameters();
             parms.Add("@EMAIL", email);
             parms.Add("@PASSWORD", password);
             _proc = "dbo.IsCollectUser";
-            return _conn.Query<int>(_proc, parms, commandType: System.Data.CommandType.StoredProcedure).SingleOrDefault() > 0;
+            return _conn.Query<int>(_proc, parms, commandType: System.Data.CommandType.StoredProcedure).SingleOrDefault();
         }
 
         public bool CreateUser(UserModel user)

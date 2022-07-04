@@ -10,6 +10,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <table>
+        <tr>
+            <td>제목</td>
+            <td><asp:Label ID="lbl_title" runat="server"/></td>
+        </tr>
+         <tr>
+            <td>작성자</td>
+            <td><asp:Label ID="lbl_name" runat="server"/></td>
+        </tr>
+        <tr>
+            <td>작성일</td>
+            <td><asp:Label ID="lbl_date" runat="server"/></td>
+        </tr>  
+        <tr>
+            <td>내용</td>
+            <td><asp:Label ID="lbl_content" runat="server"/></td>
+        </tr>
+    </table>
         </div>
     </form>
 </body>

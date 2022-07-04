@@ -39,12 +39,15 @@ namespace WebMemo
             else
             {
                 UserRepository service = new UserRepository();
-                if(service.IsCollectUser(_email, _password))
+                int user_id = service.IsCollectUser(_email, _password);
+                if (user_id > 0)
                 {
                     // 인증 부여
                     if (!string.IsNullOrEmpty(Request.QueryString["ReturnUrl"]))
                     {
-                        // 인증 쿠키값 부여
+                       
+                        // 인증 쿠키값
+                        Session["user_id"] = user_id;
                         FormsAuthentication.RedirectFromLoginPage(_email, false);
                     }
                     else

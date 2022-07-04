@@ -29,7 +29,8 @@ namespace WebMemo.MemoBoard
                     TITLE = this.txb_title.Text.Trim(),
                     CONTENT = this.txb_content.Text.Trim(),
                     IPADDRESS = Request.UserHostAddress,
-                    USER_ID = 
+                    USER_ID = Convert.ToInt32(Session["user_id"]),
+                   
                 }))
                 {
                     Response.Redirect("./ListMemo.aspx");

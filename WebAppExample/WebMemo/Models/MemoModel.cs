@@ -13,5 +13,7 @@ namespace WebMemo.Models
         public DateTime CREATED { get; set; }
         public string IPADDRESS { get; set; }
         public int USER_ID { get; set; }
+        public string NAME { get; set; }
+        public int ROW_ID { get; set; }
     }
 }
